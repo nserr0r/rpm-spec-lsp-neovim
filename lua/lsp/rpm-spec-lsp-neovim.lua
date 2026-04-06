@@ -3,7 +3,6 @@ local M = {}
 local server_name = "rpm-spec-lsp-neovim"
 local cmd = "/usr/bin/rpm-spec-lsp"
 
-
 local ok_configs, configs = pcall(require, "lspconfig.configs")
 if not ok_configs then
 	vim.notify("lspconfig.configs недоступен", vim.log.levels.ERROR)
